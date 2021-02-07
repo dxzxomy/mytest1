@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="/static/assets/bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  {% block load_css %}{% endblock %}
+</head>
+<body>
+{% block content %}
+{% endblock %}
+
+
+
+
+
+{% block load_js %}{% endblock %}
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='assets/bootstrap4/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
