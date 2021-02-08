@@ -26,6 +26,11 @@
     </form>
   </div>
 </nav>
+
+{% for i in all_data %}
+<p>{{ i }}</p>
+{% endfor %}
+
 {% endblock %}
 
 
@@ -35,5 +40,5 @@
 
 
 {% block load_js %}
-
+<script src="http://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
 {% endblock %}
